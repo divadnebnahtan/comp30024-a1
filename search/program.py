@@ -277,5 +277,5 @@ def encode_board(board: dict[Coord, CellState]) -> BoardState:
 
 def search(board: dict[Coord, CellState]) -> list[Action] | None:
     start = encode_board(board)
-    # return bfs(start)
-    return astar(start)
+    return bfs(start)
+    # return astar(start)

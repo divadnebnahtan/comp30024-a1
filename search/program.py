@@ -1,5 +1,5 @@
 from .core import CellState, Coord, Direction, Action, MoveAction, EatAction, CascadeAction, PlayerColor, BOARD_N
-from typing import Iterable, Literal
+from typing import Iterable
 from collections import deque
 import heapq
 

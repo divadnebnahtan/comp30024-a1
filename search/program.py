@@ -213,10 +213,10 @@ def astar(start: BoardState) -> list[Action] | None:
 
     counter = 0
     priority_queue = []
-    heapq.heappush(priority_queue, (heuristic(start), 0, counter, start))
+    heapq.heappush(priority_queue, (heuristic(start), 0, start))
 
     while priority_queue:
-        _priority, g_popped, _tiebreak, state = heapq.heappop(priority_queue)
+        _priority, g_popped, state = heapq.heappop(priority_queue)
 
         g_best = g_score.get(state)
         if g_best is None or g_popped != g_best:
@@ -234,7 +234,7 @@ def astar(start: BoardState) -> list[Action] | None:
             g_score[nxt] = next_g
             parent[nxt] = ParentState(state, action)
             counter += 1
-            heapq.heappush(priority_queue, (next_g + heuristic(nxt), next_g, counter, nxt))
+            heapq.heappush(priority_queue, (next_g + heuristic(nxt), next_g, nxt))
 
     return None
 
@@ -277,5 +277,5 @@ def encode_board(board: dict[Coord, CellState]) -> BoardState:
 
 def search(board: dict[Coord, CellState]) -> list[Action] | None:
     start = encode_board(board)
-    return bfs(start)
-    # return astar(start)
+    # return bfs(start)
+    return astar(start)

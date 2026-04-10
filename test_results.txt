@@ -1,0 +1,109 @@
+BFS
+
+[PASS] search/test_cases/01_simple_eat.csv length=2 t=0.074s
+[PASS] search/test_cases/02_single_cascade.csv length=3 t=0.086s
+[PASS] search/test_cases/03_direct_eat.csv length=1 t=0.078s
+[PASS] search/test_cases/04_cascade_edge.csv length=1 t=0.090s
+[PASS] search/test_cases/05_cascade_down.csv length=1 t=0.067s
+[PASS] search/test_cases/06_cascade_push_two.csv length=4 t=0.128s
+[PASS] search/test_cases/07_cascade_multi_push.csv length=1 t=0.067s
+[PASS] search/test_cases/08_merge_to_eat.csv length=4 t=0.070s
+[PASS] search/test_cases/09_merge_three_stacks.csv length=6 t=0.187s
+[PASS] search/test_cases/10_corner_blocked.csv length=9 t=0.108s
+[PASS] search/test_cases/11_wall_target.csv length=2 t=0.065s
+[PASS] search/test_cases/12_enemy_wall.csv length=13 t=2.178s
+[SKIP] /workspaces/part_a/search/test_cases/13_impossible.csv (no expected length for 13_impossible)
+[SKIP] /workspaces/part_a/search/test_cases/14_no_red.csv (no expected length for 14_no_red)
+[PASS] search/test_cases/15_no_blue.csv length=0 t=0.067s
+[PASS] search/test_cases/16_optimal_10move.csv length=10 t=25.222s
+[PASS] search/test_cases/17_eat_on_way.csv length=5 t=0.081s
+[TIMEOUT] search/test_cases/18_diagonal_six_blues.csv t=302.367s (limit 300.0s)
+[TIMEOUT] search/test_cases/19_five_blues.csv t=301.379s (limit 300.0s)
+[PASS] search/test_cases/20_corners_far.csv length=14 t=0.176s
+[PASS] search/test_cases/21_all_edge.csv length=4 t=0.159s
+[PASS] search/test_cases/22_adjacent.csv length=1 t=0.067s
+[PASS] search/test_cases/23_surrounded.csv length=5 t=0.509s
+[PASS] search/test_cases/24_cascade_self_loss.csv length=1 t=0.065s
+[PASS] search/test_cases/25_cascade_friendly.csv length=1 t=0.069s
+[PASS] search/test_cases/26_tall_eat.csv length=1 t=0.073s
+[PASS] search/test_cases/27_cascade_chain.csv length=4 t=0.145s
+[TIMEOUT] search/test_cases/28_scattered.csv t=301.630s (limit 300.0s)
+[PASS] search/test_cases/29_diagonal_shifted.csv length=21 t=142.333s
+[PASS] search/test_cases/30_corner_blocked_tall.csv length=10 t=0.130s
+[PASS] search/test_cases/31_blue_fortress.csv length=8 t=0.559s
+[PASS] search/test_cases/32_stacked_corner.csv length=7 t=0.323s
+[PASS] search/test_cases/33_L_corner.csv length=8 t=0.499s
+[PASS] search/test_cases/34_far_corner.csv length=14 t=0.171s
+[PASS] search/test_cases/35_path_blocked.csv length=9 t=1.032s
+[PASS] search/test_cases/36_cascade_only_corner.csv length=10 t=0.133s
+[TIMEOUT] search/test_cases/37_all_four_corners.csv t=300.785s (limit 300.0s)
+[PASS] search/test_cases/38_friendly_blocks.csv length=1 t=0.071s
+[SKIP] /workspaces/part_a/search/test_cases/39_impossible_fortress.csv (no expected length for 39_impossible_fortress)
+[PASS] search/test_cases/40_corridor.csv length=7 t=0.625s
+[PASS] search/test_cases/41_triple_edge.csv length=8 t=0.838s
+[PASS] search/test_cases/42_wall_of_blues.csv length=5 t=1.027s
+[PASS] search/test_cases/43_cascade_3kill.csv length=2 t=0.073s
+[PASS] search/test_cases/44_tall_enemy_cascade.csv length=2 t=0.066s
+[PASS] search/test_cases/45_push_into_enemy.csv length=2 t=0.072s
+[SKIP] /workspaces/part_a/test-1.csv (no expected length for test-1)
+[SKIP] /workspaces/part_a/test-2.csv (no expected length for test-2)
+[SKIP] /workspaces/part_a/test-suite-extra.csv (no expected length for test-suite-extra)
+[SKIP] /workspaces/part_a/test-vis1.csv (no expected length for test-vis1)
+[SKIP] /workspaces/part_a/test-vis2.csv (no expected length for test-vis2)
+========================================
+Summary: 38 passed, 4 failed
+
+A*
+
+[PASS] search/test_cases/01_simple_eat.csv length=2 t=0.100s
+[PASS] search/test_cases/02_single_cascade.csv length=3 t=0.096s
+[PASS] search/test_cases/03_direct_eat.csv length=1 t=0.074s
+[PASS] search/test_cases/04_cascade_edge.csv length=1 t=0.069s
+[PASS] search/test_cases/05_cascade_down.csv length=1 t=0.064s
+[PASS] search/test_cases/06_cascade_push_two.csv length=4 t=0.128s
+[PASS] search/test_cases/07_cascade_multi_push.csv length=1 t=0.070s
+[PASS] search/test_cases/08_merge_to_eat.csv length=4 t=0.075s
+[PASS] search/test_cases/09_merge_three_stacks.csv length=6 t=0.201s
+[PASS] search/test_cases/10_corner_blocked.csv length=9 t=0.115s
+[PASS] search/test_cases/11_wall_target.csv length=2 t=0.075s
+[PASS] search/test_cases/12_enemy_wall.csv length=13 t=2.694s
+[SKIP] /workspaces/part_a/search/test_cases/13_impossible.csv (no expected length for 13_impossible)
+[SKIP] /workspaces/part_a/search/test_cases/14_no_red.csv (no expected length for 14_no_red)
+[PASS] search/test_cases/15_no_blue.csv length=0 t=0.074s
+[PASS] search/test_cases/16_optimal_10move.csv length=10 t=19.656s
+[PASS] search/test_cases/17_eat_on_way.csv length=5 t=0.078s
+[PASS] search/test_cases/18_diagonal_six_blues.csv length=23 t=38.845s
+[TIMEOUT] search/test_cases/19_five_blues.csv t=301.627s (limit 300.0s)
+[PASS] search/test_cases/20_corners_far.csv length=14 t=0.227s
+[PASS] search/test_cases/21_all_edge.csv length=4 t=0.123s
+[PASS] search/test_cases/22_adjacent.csv length=1 t=0.100s
+[PASS] search/test_cases/23_surrounded.csv length=5 t=0.206s
+[PASS] search/test_cases/24_cascade_self_loss.csv length=1 t=0.071s
+[PASS] search/test_cases/25_cascade_friendly.csv length=1 t=0.069s
+[PASS] search/test_cases/26_tall_eat.csv length=1 t=0.073s
+[PASS] search/test_cases/27_cascade_chain.csv length=4 t=0.100s
+[TIMEOUT] search/test_cases/28_scattered.csv t=301.551s (limit 300.0s)
+[PASS] search/test_cases/29_diagonal_shifted.csv length=21 t=27.846s
+[PASS] search/test_cases/30_corner_blocked_tall.csv length=10 t=0.117s
+[PASS] search/test_cases/31_blue_fortress.csv length=8 t=0.312s
+[PASS] search/test_cases/32_stacked_corner.csv length=7 t=0.289s
+[PASS] search/test_cases/33_L_corner.csv length=8 t=0.337s
+[PASS] search/test_cases/34_far_corner.csv length=14 t=0.179s
+[PASS] search/test_cases/35_path_blocked.csv length=9 t=0.375s
+[PASS] search/test_cases/36_cascade_only_corner.csv length=10 t=0.124s
+[TIMEOUT] search/test_cases/37_all_four_corners.csv t=300.778s (limit 300.0s)
+[PASS] search/test_cases/38_friendly_blocks.csv length=1 t=0.070s
+[SKIP] /workspaces/part_a/search/test_cases/39_impossible_fortress.csv (no expected length for 39_impossible_fortress)
+[PASS] search/test_cases/40_corridor.csv length=7 t=0.507s
+[PASS] search/test_cases/41_triple_edge.csv length=8 t=0.916s
+[PASS] search/test_cases/42_wall_of_blues.csv length=5 t=0.561s
+[PASS] search/test_cases/43_cascade_3kill.csv length=2 t=0.074s
+[PASS] search/test_cases/44_tall_enemy_cascade.csv length=2 t=0.072s
+[PASS] search/test_cases/45_push_into_enemy.csv length=2 t=0.076s
+[SKIP] /workspaces/part_a/test-1.csv (no expected length for test-1)
+[SKIP] /workspaces/part_a/test-2.csv (no expected length for test-2)
+[SKIP] /workspaces/part_a/test-suite-extra.csv (no expected length for test-suite-extra)
+[SKIP] /workspaces/part_a/test-vis1.csv (no expected length for test-vis1)
+[SKIP] /workspaces/part_a/test-vis2.csv (no expected length for test-vis2)
+========================================
+Summary: 39 passed, 3 failed
